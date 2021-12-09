@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="325.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FuncionarioListController">
+   <children>
+      <Label text="Registro do Funcionario">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btNovo" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewFuncionario" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="63.99999696016312" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="86.4000244140625" text="Nome" />
+            <TableColumn fx:id="tableColumnSurname" prefWidth="106.39996337890625" text="Sobrenome" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="100.80000305175781" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="81.60003662109375" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
